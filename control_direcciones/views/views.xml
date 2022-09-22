@@ -4,13 +4,17 @@
         <field name="model">controles.control</field>
         <field name="arch" type="xml">
             <tree>
-
+                <field name="floor" string="Piso"/>
                 <field name="name" string="Nombre"/>
-                <field name="status" string="Estado"/>
-                <field name="create_date" string="Creado"/>
-                <field name="ip" string="Ip"/>
-                <field name="area" string="Area"/>
-
+                <field name="vlan" string="Vlan"/>
+                <field name="current_ip" string="Ip_actual"/>
+                <field name="address" string="Direccion"/>
+                <field name="coordination" string="Coordinacion"/>
+                <field name="ci" string="Cedula_identidad"/>
+                <field name="host_name" string="Host_name"/>
+                <field name="user" string="Usuario"/>
+                <field name="ext_phone" string="Extencion_telefonica"/>
+                <field name="comments" string="Observaciones"/>
             </tree>
         </field>
     </record>
@@ -23,11 +27,18 @@
                 <sheet>
                     <group>
 
+                        <field name="floor" string="Piso"/>
                         <field name="name" string="Nombre"/>
-                        <field name="status" string="Estado"/>
-                        <field name="ip" string="Ip"/>
-                        <field name="area" string="Area"/>
-                        
+                        <field name="vlan" string="Vlan"/>
+                        <field name="current_ip" string="Ip_actual"/>
+                        <field name="address" string="Direccion"/>
+                        <field name="coordination" string="Coordinacion"/>
+                        <field name="ci" string="Cedula_identidad"/>
+                        <field name="host_name" string="Host_name"/>
+                        <field name="user" string="Usuario"/>
+                        <field name="ext_phone" string="Extencion_telefonica"/>
+                        <field name="comments" string="Observaciones"/>
+
                     </group>
                 </sheet>
             </form>
