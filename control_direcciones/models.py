@@ -13,8 +13,8 @@ class Control(models.Model):
     host_name = fields.Char("Host_name")
     user = fields.Char("Usuario")
     ext_phone = fields.Integer("Extencion_telefonica")
-    comments = fields.Char("Observaciones")
-    
+    comments = fields.Text("Observaciones")
+
 
     
   
