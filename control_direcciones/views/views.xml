@@ -1,0 +1,48 @@
+<odoo>
+    <record id="view_tree_control" model="ir.ui.view">
+        <field name="name">view.tree.control</field>
+        <field name="model">controles.control</field>
+        <field name="arch" type="xml">
+            <tree>
+
+                <field name="name" string="Nombre"/>
+                <field name="status" string="Estado"/>
+                <field name="create_date" string="Creado"/>
+                <field name="ip" string="Ip"/>
+                <field name="area" string="Area"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_control" model="ir.ui.view">
+        <field name="name">view.tree.control</field>
+        <field name="model">controles.control</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+
+                        <field name="name" string="Nombre"/>
+                        <field name="status" string="Estado"/>
+                        <field name="ip" string="Ip"/>
+                        <field name="area" string="Area"/>
+                        
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_control" model="ir.actions.act_window">
+        <field name="name">Control de Direcciones Ips</field>
+        <field name="res_model">controles.control</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create"> Listado </p>
+        </field>
+
+    </record>
+
+    <menuitem id="menu_control" parent="" action="control_direcciones.action_view_control" />
+</odoo>
