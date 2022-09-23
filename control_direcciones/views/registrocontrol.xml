@@ -1,0 +1,49 @@
+<odoo>
+    <record model="ir.ui.view" id="action_vista_users_tree">
+        <field name="name">registro.control.tree</field>
+        <field name="model">controles.control</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="floor" string="Piso"/>
+                <field name="name" string="Nombre"/>
+                <field name="vlan" string="Vlan"/>
+                <field name="current_ip" string="Ip_actual"/>
+                <field name="address" string="Direccion"/>
+                <field name="coordination" string="Coordinacion"/>
+                <field name="ci" string="Cedula_identidad"/>
+                <field name="host_name" string="Host_name"/>
+                <field name="user" string="Usuario"/>
+                <field name="ext_phone" string="Extencion_telefonica"/>
+                <field name="comments" string="Observaciones"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="action_vista_users_form">
+        <field name="name">registro.control.form</field>
+        <field name="model">controles.control</field>
+        <field name="arch" type="xml">
+            <form string="Formulario de usuarios">
+                <sheet>
+                    <group colspan="2">
+                        <group>
+                            <field name="floor" string="Piso"/>
+                            <field name="name" string="Nombre"/>
+                            <field name="vlan" string="Vlan"/>
+                            <field name="current_ip" string="Ip_actual"/>
+                            <field name="address" string="Direccion"/>
+                            <field name="coordination" string="Coordinacion"/>
+                            <field name="ci" string="Cedula_identidad"/>
+                            <field name="host_name" string="Host_name"/>
+                            <field name="user" string="Usuario"/>
+                            <field name="ext_phone" string="Extencion_telefonica"/>
+                            <field name="comments" string="Observaciones"/>
+                        </group>
+                    </group>
+
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+</odoo>

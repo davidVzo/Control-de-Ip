@@ -1,0 +1,26 @@
+<odoo>
+    <record model="ir.actions.act_window" id="action_list_usuarios">
+        <field name="name">Registro de usuarios</field>
+        <field name="res_model">users.control</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="action_list_control">
+        <field name="name">Registro de control</field>
+        <field name="res_model">controles.control</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+
+    <menuitem id="menu_principal" name="Registro Control"/>
+    <menuitem id="menu_principal_registros" name="Registros" parent="menu_principal"/>
+     
+    <menuitem id="menu_control" name="Registro de Control" parent="menu_principal_registros" action="action_list_control"/>
+    <menuitem id="menu_usuarios" parent="menu_principal_registros" name="Registro de usuarios" action="action_list_usuarios"/>
+
+
+
+
+</odoo>

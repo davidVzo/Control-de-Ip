@@ -26,7 +26,6 @@
             <form>
                 <sheet>
                     <group>
-
                         <field name="floor" string="Piso"/>
                         <field name="name" string="Nombre"/>
                         <field name="vlan" string="Vlan"/>
@@ -38,7 +37,6 @@
                         <field name="user" string="Usuario"/>
                         <field name="ext_phone" string="Extencion_telefonica"/>
                         <field name="comments" string="Observaciones"/>
-
                     </group>
                 </sheet>
             </form>

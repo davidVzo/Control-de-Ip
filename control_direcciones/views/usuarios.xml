@@ -1,0 +1,44 @@
+<odoo>
+	<record model="ir.ui.view" id="action_vista_users_tree">
+	    <field name="name">registro.users.tree</field>
+	    <field name="model">users.control</field>
+	    <field name="arch" type="xml">
+	      <tree string="Tabla de usuario">
+
+	      	<field name="names"/>
+		<field name="ci" />  
+		<field name="user" />
+		
+
+	      </tree>
+	    </field>
+ 	</record>
+
+	<record model="ir.ui.view" id="action_vista_users_form">
+	    <field name="name">registro.users.form</field>
+	    <field name="model">users.control</field>
+	    <field name="arch" type="xml">
+	      	<form string="Formulario de usuarios">
+		<sheet>
+		  	<group colspan="2">
+				<!--
+					<group>
+				  	<field name="foto" widget="image"/> 
+		  		</group>
+				-->
+		  		
+		  		<group>
+					
+					<field name="name" />
+					<field name="ci"/> 
+					<field name="user"/>
+			
+				</group>
+			</group>
+			    
+		</sheet>
+
+		</form>
+		</field>
+	</record>
+</odoo>
