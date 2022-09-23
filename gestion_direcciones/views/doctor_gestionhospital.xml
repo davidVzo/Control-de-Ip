@@ -3,10 +3,11 @@
 	    <field name="name">registro.doctor.tree</field>
 	    <field name="model">doctor.gestionhospital</field>
 	    <field name="arch" type="xml">
-	      <tree string="Tabla de doctores">
+	      <tree string="Tabla de usuario">
 	      	<field name="apellido"/>
 		<field name="nombre" />  
 		<field name="celular" />
+		<field name="name" />
 	      </tree>
 	    </field>
  	</record>
@@ -15,34 +16,23 @@
 	    <field name="name">registro.doctor.form</field>
 	    <field name="model">doctor.gestionhospital</field>
 	    <field name="arch" type="xml">
-	      	<form string="Formulario de doctores">
+	      	<form string="Formulario de usuarios">
 		<sheet>
 		  	<group colspan="2">
 		  		<group>
 				  	<field name="foto" widget="image"/> 
 		  		</group>
 		  		<group>
-					<field name="name"/>
+					<field name="name" string="Cédula" />
 					<field name="nombre" />
 					<field name="apellido"/> 
 					<field name="celular"/>
-				    <field name="n_colegiatura"/>
+			
 				</group>
 			</group>
-			    <group>
-				    <field name="id_especialidad"/>
-			    </group>
+			    
 		</sheet>
-		<sheet>
-			<group>
-				<field name="id_cita" readonly="1">
-				    <tree>
-				        <field name="name"/>
-				        <field name="especialidad"/>
-				    </tree>
-				</field>  
-			</group>      
-		</sheet>
+
 		</form>
 		</field>
 	</record>

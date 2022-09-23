@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 {
-'name': "gestionhospital",
+'name': "gestiondirecciones",
 
     'summary': """
-        Módulo para la gestión de un hospital""",
+        Módulo para el control de ips""",
 
     'description': """
-        EL presente módulo es desarrollado con el fin de mostrar a los espectadores
-        conceptos básicos para empezar a crear temas en Odoo.
+        EL presente módulo .
     """,
 
-    'author': "Wiñaytel Security",
-    'website': "https://winaytel.com/",
+    'author': "David",
+    
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -26,8 +25,7 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+      
         'views/menusyacciones.xml',
         'views/cita_gestionhospital.xml',
         'views/doctor_gestionhospital.xml',

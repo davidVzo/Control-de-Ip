@@ -3,7 +3,7 @@
 		<field name="name">registro.cita.tree</field>
 		<field name="model">cita.gestionhospital</field>
 		<field name="arch" type="xml">
-			<tree string="Tabla de las citas">
+			<tree string="Tabla de control">
 				<field name="name"/>
 				<field name="id_paciente_cita"/>
 				<field name="cod_cita"/>
@@ -16,7 +16,7 @@
 		<field name="name">registro.cita.form</field>
 		<field name="model">cita.gestionhospital</field>
 		<field name="arch" type="xml">
-			<form string="Formulario de las citas">
+			<form string="Formulario de control">
 				<sheet>
 					<group colspan="2">
 						<group>
