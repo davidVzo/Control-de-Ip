@@ -6,5 +6,5 @@ class Area(models.Model):
     address = fields.Char("Direccion")
     siglas = fields.Char("Siglas")
     vlan = fields.Integer("Vlan")
-    responsible = fields.Char("Responsible")
+    responsible = fields.Char("Responsable")
     
